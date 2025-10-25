@@ -1,4 +1,5 @@
 import sys
+from sys import stdin  
 
 #проверка числа, является ли он целым
 
@@ -87,7 +88,7 @@ def obr_polsk(s):
                         raise  ZeroDivisionError
                     else:
                         raise ValueError
-             st.append(r) # убираем в стек полученный результа 
+            st.append(r) # убираем в стек полученный результа 
         else:
             raise ValueError    
 # В конце всех действий должен остаться только один результат 
@@ -97,7 +98,7 @@ def obr_polsk(s):
     else:
         raise IndexError('Error')
     
-from sys import stdin  
+
 
 # основная функция которая ведет подсчет выражений из ввода 
 
